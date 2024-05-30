@@ -1,0 +1,10 @@
+#!/bin/bash
+
+case ${MakeClean} in
+	[Yy][Ee][Ss])
+		make distclean
+		;;
+esac
+
+CC=gcc
+make ${MAKE_FLAGS}
